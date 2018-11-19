@@ -1,0 +1,216 @@
+header {
+    background-color: #fafafa;
+    max-width: 1920px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.container__header {
+    display: flex;
+    justify-content: space-around;
+    padding-right: 15px;
+    padding-left: 15px;
+    padding-bottom: 25px;
+}
+
+.left__content {
+    max-width: 495px;
+    width: 100%;
+    padding-top: 26px;
+    display: flex;
+    flex-direction: column;
+}
+
+.main__logo {
+    margin: 4px 0;
+    max-width: 370px;
+    width: 100%;
+    height: 41px;
+}
+
+.logo_img {
+    max-width: 370px;
+    width: 100%;
+}
+
+.quality__dev__text {
+    margin: 4px 0;
+    border-radius: 3px;
+    background-color: #415d9d;
+    max-width: 468px;
+    width: 100%;
+    height: 32px;
+    text-align: center;
+    vertical-align: middle;
+    color: #ffffff;
+    font-family: "Proxima Nova", sans-serif;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 34px;
+    letter-spacing: 0.17px;
+    text-transform: uppercase;
+    box-sizing: border-box;
+}
+
+.more__80__dev_text {
+    margin: 4px 0;
+    border-radius: 0 0 10px 2px;
+    background-color: #82aee5;
+    max-width: 468px;
+    width: 100%;
+    height: 25px;
+    color: #ffffff;
+    font-size: 14px;
+    font-family: "Proxima Nova", sans-serif;
+    font-weight: 300;
+    display: flex;
+    align-items: center;
+    padding-left: 12px;
+    box-sizing: border-box;
+}
+
+.dev__80 {
+    color: #fab917;
+    font-size: 17px;
+    letter-spacing: 0.17px;
+    line-height: 34px;
+    text-transform: uppercase;
+}
+
+.dev__C {
+    font-size: 17px;
+    font-weight: 400;
+    letter-spacing: 0.17px;
+    line-height: 34px;
+    text-transform: uppercase;
+}
+
+
+.right__content {
+    max-width: 368px;
+    width: 100%;
+    padding-top: 26px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.right__content a {
+    text-decoration: none;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #415d9d;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    font-family: "Helvetica Neue Cyr", sans-serif;
+    font-weight: 700;
+}
+
+.right__content a:hover {
+    color: #415d9d;
+    background-color: #B0E0E6;
+    animation: zoom 3s;
+}
+
+@keyframes zoom {
+    0%,
+    1% {
+        transform: rotate(0deg) scale(1);
+    }
+    1% {
+        transform: rotate(720deg) scale(1.5);
+    }
+}
+
+.container__links {
+    max-width: 153px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.info__right__container__text {
+    letter-spacing: 0.17px;
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 24px;
+    color: #2d4871;
+}
+
+.container__numbers {
+    margin-top: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 400;
+    font-family: "Helvetica Neue Cyr";
+}
+
+.container__net__dev {
+    margin-top: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 400;
+    font-family: "Helvetica Neue Cyr";
+}
+
+.fa-phone {
+    transform: rotate(90deg);
+}
+
+@media screen and (max-width: 863px) {
+    .right__content {
+        margin: 0 auto;
+        width: 100%;
+        max-width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 20px;
+    }
+
+    .container__net__dev,
+    .container__numbers {
+        padding-left: 20px;
+        flex-direction: row-reverse;
+        display: flex;
+        align-self: flex-start;
+    }
+
+    .adapt__icon {
+        margin-right: 10px;
+    }
+
+    .container__header {
+        display: flex;
+        justify-content: flex-start;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .quality__dev__text {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 495px) {
+    .quality__dev__text {
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width: 370px) {
+    .quality__dev__text {
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .second__number {
+        display: block;
+    }
+}
